@@ -6,7 +6,7 @@ import Truck from '../assets/truck.png'
 
 const Banner = () => {
     return (
-        <Flex w={"100%"} as='section' direction={{base:"column-reverse",md:"row"}}>
+        <Flex w={"100%"} as='section' height={'100vh'} direction={{base:"column-reverse",md:"row"}}>
             <Flex w={{base:"100%", md:"50%"}} direction={"column"} pl={{base:"0px", md:"80px"}}>
             <Show above='md'> 
                 <Box w={"20"} pt={"30px"}>                                         
@@ -29,7 +29,7 @@ const Banner = () => {
                     <Button fontSize={{base:"14px", md:"16px", lg:"18px"}} bg={"#E23744"} color={"white"} borderRadius={50} w={{base:"120px",md:"150px",lg:"190px"}} h={{base:"40px", md:"53px", lg:"63px"}}  _hover={{ bg: "#c91d2b" }} mt={{base:"5px"}}>Explore Now!</Button>
                 </Flex>
             </Flex>
-            <Box w={{base:"100%", md:"50%"}}>
+            <Box height={'100vh'} w={{base:"100%", md:"50%"}}>
                 <Box w={"100%"} position={"relative"}>
                     <Image
                         src={Pizza}
